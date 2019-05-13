@@ -8,6 +8,7 @@ const ListItem = props => {
         {props.filteredEventsList.map(event => {
           return (
             <p key={event.id}>
+              {/* Is there a way if making this less hardcoded and more reusable? */}
               {props.type === "PullRequestEvent" ? (
                 <span>
                   <a href={event.payload.pull_request.html_url}>

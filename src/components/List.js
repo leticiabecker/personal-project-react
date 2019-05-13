@@ -2,7 +2,7 @@ import React from "react";
 import ListItem from "./ListItem";
 
 const List = props => {
-  const filterEventsByType = props.events
+  const filterEventsByType = props.appProps.events
     .filter(event => event.type === props.type)
     .reduce((acc, next) => {
       if (
@@ -29,9 +29,10 @@ const List = props => {
         return [...acc, next];
       }
     }, []);
+
   return (
     <div className="List">
-      {props.events.length > 0 && <h2>{props.type} List</h2>}
+      {filterEventsByType.length > 0 && <h2>{props.type} List</h2>}
       <ListItem filteredEventsList={filterEventsByType} type={props.type} />
     </div>
   );

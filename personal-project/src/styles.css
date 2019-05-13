@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,600,700");
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: #224245;
+  color: #e7f8f8;
+}
+
+.App {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.UserForm {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
+.UserForm * {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+input {
+  border-radius: 50px;
+  margin: 0 5px;
+  font-size: 14px;
+  padding: 5px 15px;
+  border: 1px solid #224245;
+}
+
+input[type="submit"] {
+  background-color: #224245;
+  border: 2px solid #e7f8f8;
+  color: #e7f8f8;
+}
+
+.ListsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.List {
+  background-color: #f7e1ec;
+  color: #224245;
+  box-shadow: 2px 2px 40px #333333;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  flex-grow: 1;
+}
+
+a {
+  color: #e47193;
+}
+
+.status {
+  border-radius: 50px;
+  padding: 3px;
+  color: #ffffff;
+}
+
+.merged {
+  background-color: green;
+}
+
+.open {
+  background-color: yellow;
+  color: #224245;
+}
+
+.closed {
+  background-color: red;
+}
